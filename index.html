@@ -28,7 +28,42 @@
 					<h1>Lección de juegos para un Robot</h1>
 				</section>
 				<section>
-
+				    <svg id="figure">
+    				    <use id="maze"  class="anim" xlink:href="maze.svg#maze" transform="translate(650,300) scale(.24)"></use>
+    				    <use id="robot"  class="anim" xlink:href="robot.svg#robot" transform="translate(50,250) scale(.34)"></use>
+    				    <g>
+    				        <defs>
+    				            <marker id="arrow" viewBox="0 -5 10 10" refX="5" refY="0" marker-width="4" marker-height="4" orient="auto">
+    				            <path d="M0,-5L10,0L0,5" class="arrowHead"></path>
+    				            </marker>
+    				        </defs>
+    				    </g>
+    				    <g id="action" class="anim">
+    				        <text x="423" y="160" font-family="Futura" font-size="35">ACTION</text>
+    				        <line x1="220" y1="240" x2="220" y2="180" stroke="#0C090D" stroke-width="5"></line>
+    				        <line x1="220" y1="180" x2="770" y2="180" stroke="#0C090D" stroke-width="5" ></line>           
+    				        <line x1="770" y1="180" x2="770" y2="290" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
+    				    </g>
+    				    <g id="state" class="anim">
+    				        <text x="433" y="650" font-family="Futura" fill="#0C090D" font-size="35">STATE</text>
+    				        <line x1="220" y1="610" x2="770" y2="610" stroke="#0C090D" stroke-width="5" ></line>           
+    				        <line x1="770" y1="610" x2="770" y2="500" stroke="#0C090D" stroke-width="5" ></line>
+    				        <line x2="220" y2="530" x1="220" y1="610" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
+    				    </g>
+    				    <g id="reward" class="anim">
+    				        <use xlink:href="a_reward.svg#reward" transform="translate(465,350) scale(.05)"></use>
+    				        <text x="419" y="430" font-family="Futura" font-size="35">REWARD</text>
+    				        <line x1="670" y1="395" x2="340" y2="395" stroke-dasharray="5, 5" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
+    				    </g>
+    				 </svg>
+				</section>
+				<section>
+					<iframe src="https://amaurs.com/gridworld/" width="1092px" height="464px"></iframe>
+				</section>
+				<section>
+					<iframe src="https://amaurs.com/car/" width="1092px" height="744px"></iframe>
+				</section>
+				<section>
 					<iframe src="https://amaurs.com/windy-gridworld/" width="840px" height="540px"></iframe>
 				</section>
 			</div>
