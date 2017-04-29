@@ -1,132 +1,239 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/futura.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/futura.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Lección de juegos para un Robot</h1>
-				</section>
-				<section>
-					<style>
-						.arrow{
-							stroke-width:5;
-							stroke:#000;
-							stroke-dasharray:5, 5;
-						}
-						.anim {
-							animation-name: appear;
-							animation-duration: 3s;
-							animation-fill-mode: forwards;
-							opacity: 0;
-						}
-						#maze {
-							fill:#679436;
-							animation-delay: 3s;
-						}
-						#robot {
-							fill:#4899ae;
-							animation-delay: 1s;
-						}
-						#reward {
-							fill:#ffad05;
-							animation-delay: 11s;
-						}
-						#reward text{
-							fill:#0C090D;
-						}
-						
-						#action {
-							animation-delay: 5s;
-						}
-						#state {
-							animation-delay: 7s;
-						}
-						@keyframes appear {
-							from { opacity: 0; }
-							to { opacity: 1; }
-						}
-						#figure {
-							width: 1000px;
-							height: 800px; 
-						}
-					</style>
-				    <svg id="figure" transform="translate(0,-100)scale(.8)">
-    				    <use id="maze"  xlink:href="maze.svg#maze" transform="translate(650,300) scale(.24)"></use>
-    				    <use id="robot"  xlink:href="robot.svg#robot" transform="translate(50,250) scale(.34)"></use>
-    				    <g>
-    				        <defs>
-    				            <marker id="arrow" viewBox="0 -5 10 10" refX="5" refY="0" marker-width="4" marker-height="4" orient="auto">
-    				            <path d="M0,-5L10,0L0,5" class="arrowHead"></path>
-    				            </marker>
-    				        </defs>
-    				    </g>
-    				    <g id="action">
-    				        <text x="423" y="160" font-family="Futura" font-size="35">ACTION</text>
-    				        <line x1="220" y1="240" x2="220" y2="180" stroke="#0C090D" stroke-width="5"></line>
-    				        <line x1="220" y1="180" x2="770" y2="180" stroke="#0C090D" stroke-width="5" ></line>           
-    				        <line x1="770" y1="180" x2="770" y2="290" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
-    				    </g>
-    				    <g id="state">
-    				        <text x="433" y="650" font-family="Futura" fill="#0C090D" font-size="35">STATE</text>
-    				        <line x1="220" y1="610" x2="770" y2="610" stroke="#0C090D" stroke-width="5" ></line>           
-    				        <line x1="770" y1="610" x2="770" y2="500" stroke="#0C090D" stroke-width="5" ></line>
-    				        <line x2="220" y2="530" x1="220" y1="610" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
-    				    </g>
-    				    <g id="reward">
-    				        <use xlink:href="a_reward.svg#reward" transform="translate(465,350) scale(.05)"></use>
-    				        <text x="419" y="430" font-family="Futura" font-size="35">REWARD</text>
-    				        <line x1="670" y1="395" x2="340" y2="395" stroke-dasharray="5, 5" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
-    				    </g>
-    				 </svg>
-				</section>
-				<section>
-					<iframe src="https://amaurs.com/gridworld/" width="1092px" height="464px"></iframe>
-				</section>
-				<section>
-					<iframe src="https://amaurs.com/car/" width="1092px" height="744px"></iframe>
-				</section>
-				<section>
-					<iframe src="https://amaurs.com/windy-gridworld/" width="840px" height="540px"></iframe>
-				</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Lección de juegos para un Robot</h1>
+            </section>
+            <section>
+                <style>
+                    .arrow{
+                        stroke-width:5;
+                        stroke:#000;
+                        stroke-dasharray:5, 5;
+                    }
+                    .anim {
+                        animation-name: appear;
+                        animation-duration: 3s;
+                        animation-fill-mode: forwards;
+                        opacity: 0;
+                    }
+                    #maze {
+                        fill:#679436;
+                        animation-delay: 3s;
+                    }
+                    #robot {
+                        fill:#4899ae;
+                        animation-delay: 1s;
+                    }
+                    #reward {
+                        fill:#ffad05;
+                        animation-delay: 11s;
+                    }
+                    #reward text{
+                        fill:#0C090D;
+                    }
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+                    #action {
+                        animation-delay: 5s;
+                    }
+                    #state {
+                        animation-delay: 7s;
+                    }
+                    @keyframes appear {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                    }
+                    #figure {
+                        width: 1000px;
+                        height: 800px; 
+                    }
+                </style>
+                <svg id="figure" transform="translate(0,-100)scale(.8)">
+                    <use id="maze"  xlink:href="maze.svg#maze" transform="translate(650,300) scale(.24)"></use>
+                    <use id="robot"  xlink:href="robot.svg#robot" transform="translate(50,250) scale(.34)"></use>
+                    <g>
+                        <defs>
+                            <marker id="arrow" viewBox="0 -5 10 10" refX="5" refY="0" marker-width="4" marker-height="4" orient="auto">
+                                <path d="M0,-5L10,0L0,5" class="arrowHead"></path>
+                            </marker>
+                        </defs>
+                    </g>
+                    <g id="action">
+                        <text x="423" y="160" font-family="Futura" font-size="35">ACTION</text>
+                        <line x1="220" y1="240" x2="220" y2="180" stroke="#0C090D" stroke-width="5"></line>
+                        <line x1="220" y1="180" x2="770" y2="180" stroke="#0C090D" stroke-width="5" ></line>           
+                        <line x1="770" y1="180" x2="770" y2="290" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
+                    </g>
+                    <g id="state">
+                        <text x="433" y="650" font-family="Futura" fill="#0C090D" font-size="35">STATE</text>
+                        <line x1="220" y1="610" x2="770" y2="610" stroke="#0C090D" stroke-width="5" ></line>           
+                        <line x1="770" y1="610" x2="770" y2="500" stroke="#0C090D" stroke-width="5" ></line>
+                        <line x2="220" y2="530" x1="220" y1="610" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
+                    </g>
+                    <g id="reward">
+                        <use xlink:href="a_reward.svg#reward" transform="translate(465,350) scale(.05)"></use>
+                        <text x="419" y="430" font-family="Futura" font-size="35">REWARD</text>
+                        <line x1="670" y1="395" x2="340" y2="395" stroke-dasharray="5, 5" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
+                    </g>
+                </svg>
+            </section>
+            <section>
+                <iframe src="https://amaurs.com/gridworld/" width="1092px" height="464px"></iframe>
+            </section>
+            <section>
+                <iframe src="https://amaurs.com/car/" width="1092px" height="744px"></iframe>
+            </section>
+            <section>
+                <div class="board">
+                    <div class="grid_bg">
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div>🤖</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>🍺</div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <svg class="arrows" width="420" height="294">
+                        <g>
+                            <defs>
+                                <marker id="arrow" viewBox="0 -5 10 10" refX="5" refY="0" markerWidth="4" markerHeight="4" orient="auto">
+                                    <path d="M0,-5L10,0L0,5" class="arrowHead"></path>
+                                </marker>
+                            </defs>
+                        </g>
+                        <g>
+                            <line x1="21" y1="147" x2="147" y2="147" stroke="#0C090D" stroke-width="2" visibility="visible"></line>
+                            <line x1="147" y1="147" x2="273" y2="21" stroke="#0C090D" stroke-width="2" visibility="visible"></line>
+                            <line x1="273" y1="21" x2="399" y2="21" stroke="#0C090D" stroke-width="2" visibility="visible"></line>
+                            <line x1="399" y1="21" x2="399" y2="189" stroke="#0C090D" stroke-width="2" visibility="visible"></line>
+                            <line x1="399" y1="189" x2="357" y2="189" stroke="#0C090D" stroke-width="2" visibility="visible"></line>
+                            <line x1="357" y1="189" x2="315" y2="147" stroke="#0C090D" stroke-width="2" marker-end="url(#arrow)" visibility="visible"></line>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+            <section>
+                <iframe src="https://amaurs.com/windy-gridworld/" width="840px" height="540px"></iframe>
+            </section>
+        </div>
+    </div>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
-</html>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+    </html>
