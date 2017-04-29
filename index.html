@@ -50,6 +50,54 @@
             float: left;
             font-size: 36px;
         }
+        .grid {
+            width: calc(14 * 36px);
+            height: calc(15 * 36px);
+            margin: auto !important;
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+        }
+        .grid>div {
+            width: calc(14 * 36px);
+            height: 36px;
+        }
+
+        .grid>div>div {
+            width: 34px;
+            height: 34px;
+            border-style: solid;
+            border: 1px solid #eee;
+            text-align: center;
+            float: left;
+            font-size: 28px;
+        }
+        .car-grid {
+            width: calc(33 * 20px);
+            height: calc(31 * 20px);
+            margin: auto !important;
+            position: absolute;
+            top:300px;
+            bottom:0;
+            left:0;
+            right:0;
+        }
+        .car-grid>div {
+            width: calc(33 * 20px);
+            height: 20px;
+        }
+
+        .car-grid>div>div {
+            width: 18px;
+            height: 18px;
+            border-style: solid;
+            border: 1px solid #eee;
+            text-align: center;
+            float: left;
+            font-size: 16px;
+        }
         .red {
             background-color: rgb(255,155,155);
         }
@@ -67,6 +115,9 @@
         }
         .cyan {
             background-color: rgb(155,255,255);
+        }
+        .emoji {
+            font-size: 100px !important;
         }
     </style>
 
@@ -159,13 +210,262 @@
                 </svg>
             </section>
             <section>
-               <div>🐭</div>
+                <div class="emoji">🐭</div>
             </section>
             <section>
-               <div>⚡️</div>
+                <div class="emoji">⚡️</div>
             </section>
             <section>
-               <div>🧀</div>
+                <div class="emoji">🧀</div>
+            </section>
+            <section>
+                <div class="emoji">⚫</div>
+            </section>
+            <section class="center">
+                <div class="grid-board">
+                    <div class="grid">
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚡</div>
+                            <div>⚡</div>
+                            <div>⚡</div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚡</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>⚡</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚡</div>
+                            <div></div>
+                            <div>⚡</div>
+                            <div>⚡</div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div>⚡</div>
+                            <div></div>
+                            <div></div>
+                            <div>⚡</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚡</div>
+                            <div></div>
+                            <div></div>
+                            <div>🧀</div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div>⚡</div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>⚡</div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div>⚡</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>⚡</div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>🐭</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div>⚡</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div>⚡</div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>⚫</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section>
                 <style>
@@ -175,6 +475,38 @@
                     }
                 </style>
                 <svg id="actions">
+                    <g>
+                        <defs>
+                            <marker id="arrow" viewBox="0 -5 10 10" refX="5" refY="0" markerWidth="4" markerHeight="4" orient="auto">
+                                <path d="M0,-5L10,0L0,5" class="arrowHead"></path>
+                            </marker>
+                        </defs>
+                    </g>
+                    <g>
+                        <line x1="150" y1="150" x2="150" y2="250" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)" visibility="visible"></line       >
+                            <line x1="150" y1="150" x2="150" y2="50" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="visible"></line>
+                            <line x1="150" y1="150" x2="50" y2="150" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="visible"></line>
+                            <line x1="150" y1="150" x2="250" y2="150" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)" visibility="visible"></line       >
+                            </g>
+                        </svg>
+                    </section>
+                    <section>
+                        <iframe src="https://amaurs.com/gridworld/" width="1092px" height="464px"></iframe>
+                    </section>
+                    <section>
+                     <div class="emoji">🚗</div>
+                 </section>
+                 <section>
+                    <div class="emoji">🌲</div>
+                </section>
+                <section>
+                    <style>
+                        #actions {
+                            width: 300px;
+                            height: 300px;
+                        }
+                    </style>
+                    <svg id="actions">
                         <g>
                             <defs>
                                 <marker id="arrow" viewBox="0 -5 10 10" refX="5" refY="0" markerWidth="4" markerHeight="4" orient="auto">
@@ -183,30 +515,1124 @@
                             </defs>
                         </g>
                         <g>
-                            <line x1="150" y1="150" x2="150" y2="250" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)" visibility="visible"></line>
-                            <line x1="150" y1="150" x2="150" y2="50" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="visible"></line>
-                            <line x1="150" y1="150" x2="50" y2="150" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="visible"></line>
-                            <line x1="150" y1="150" x2="250" y2="150" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)" visibility="visible"></line>
+                            <line x1="150" y1="150" x2="150" y2="50" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="visible   "></line>
+                            <line x1="150" y1="150" x2="50" y2="150" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="visible   "></line>
                         </g>
                     </svg>
-            </section>
-            <section>
-                <iframe src="https://amaurs.com/gridworld/" width="1092px" height="464px"></iframe>
-            </section>
-            <section>
-               <div>🚗</div>
-            </section>
-            <section>
-               <div>🌲</div>
-            </section>
-            <section>
-                <style>
-                    #actions {
-                        width: 300px;
-                        height: 300px;
-                    }
-                </style>
-                <svg id="actions">
+                </section>
+                <section>
+                    <div class="grid-board">
+                        <div class="car-grid">
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌳</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                            </div>
+                            <div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div>🌲</div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🚗</div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div> </div>
+                                <div>🌲</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <iframe src="https://amaurs.com/car/" width="1092px" height="744px"></iframe>
+                </section>
+                <section>
+                    <div class="emoji">🤖</div>
+                </section>
+                <section>
+                    <div class="emoji">🍺</div>
+                </section>
+                <section>
+                    <style>
+                        #actions {
+                            width: 300px;
+                            height: 300px;
+                        }
+                    </style>
+                    <svg id="actions">
                         <g>
                             <defs>
                                 <marker id="arrow" viewBox="0 -5 10 10" refX="5" refY="0" markerWidth="4" markerHeight="4" orient="auto">
@@ -215,46 +1641,16 @@
                             </defs>
                         </g>
                         <g>
-                            <line x1="150" y1="150" x2="150" y2="50" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="visible"></line>
-                            <line x1="150" y1="150" x2="50" y2="150" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="visible"></line>
+                            <line x1="150" y1="150" x2="150" y2="250" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)" visibility="  visible"></line>
+                            <line x1="150" y1="150" x2="150" y2="50" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="   visible"></line>
+                            <line x1="150" y1="150" x2="50" y2="150" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="   visible"></line>
+                            <line x1="150" y1="150" x2="250" y2="150" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)" visibility="  visible"></line>
                         </g>
                     </svg>
-            </section>
-            <section>
-                <iframe src="https://amaurs.com/car/" width="1092px" height="744px"></iframe>
-            </section>
-            <section>
-               <div>🤖</div>
-            </section>
-            <section>
-               <div>🍺</div>
-            </section>
-            <section>
-                <style>
-                    #actions {
-                        width: 300px;
-                        height: 300px;
-                    }
-                </style>
-                <svg id="actions">
-                        <g>
-                            <defs>
-                                <marker id="arrow" viewBox="0 -5 10 10" refX="5" refY="0" markerWidth="4" markerHeight="4" orient="auto">
-                                    <path d="M0,-5L10,0L0,5" class="arrowHead"></path>
-                                </marker>
-                            </defs>
-                        </g>
-                        <g>
-                            <line x1="150" y1="150" x2="150" y2="250" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)" visibility="visible"></line>
-                            <line x1="150" y1="150" x2="150" y2="50" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="visible"></line>
-                            <line x1="150" y1="150" x2="50" y2="150" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)"     visibility="visible"></line>
-                            <line x1="150" y1="150" x2="250" y2="150" stroke="#0C090D" stroke-width="13" marker-end="url(#arrow)" visibility="visible"></line>
-                        </g>
-                    </svg>
-            </section>
+                </section>
             <section>
                 <div class="windy-board">
-                <div class="windy-grid">
+                    <div class="windy-grid">
                         <div>
                             <div></div>
                             <div></div>
@@ -349,7 +1745,7 @@
                             </defs>
                         </g>
                         <g>
-                            
+
                             <line x1="21" y1="147" x2="147" y2="147" stroke="#0C090D" stroke-width="2" visibility="visible"></line>
                             <line x1="147" y1="147" x2="273" y2="21" stroke="#0C090D" stroke-width="2" visibility="visible"></line>
                             <line x1="273" y1="21" x2="399" y2="21" stroke="#0C090D" stroke-width="2" visibility="visible"></line>
@@ -362,6 +1758,9 @@
             </section>
             <section>
                 <iframe src="https://amaurs.com/windy-gridworld/" width="840px" height="540px"></iframe>
+            </section>
+            <section>
+                <h1>Gracias</h1>
             </section>
         </div>
     </div>
