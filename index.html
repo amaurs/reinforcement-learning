@@ -28,9 +28,58 @@
 					<h1>Lección de juegos para un Robot</h1>
 				</section>
 				<section>
+					<style>
+						.arrow{
+							stroke-width:5;
+							stroke:#000;
+							stroke-dasharray:5, 5;
+						}
+						.anim {
+							animation-name: appear;
+							animation-duration: 3s;
+							animation-fill-mode: forwards;
+							opacity: 0;
+						}
+						#maze {
+							fill:#679436;
+							animation-delay: 3s;
+						}
+						#robot {
+							fill:#4899ae;
+							animation-delay: 1s;
+						}
+						#reward {
+							fill:#ffad05;
+							animation-delay: 11s;
+						}
+						#reward text{
+							fill:#0C090D;
+						}
+						
+						#action {
+							animation-delay: 5s;
+						}
+						#state {
+							animation-delay: 7s;
+						}
+						@keyframes appear {
+							from { opacity: 0; }
+							to { opacity: 1; }
+						}
+						#figure {
+							width: 800px;
+							height: 600px;
+							margin:auto;
+							position: absolute;
+							top:0;
+							bottom:0;
+							left:0;
+							right:0; 
+						}
+					</style>
 				    <svg id="figure" width="1000px" height="800px">
-    				    <use id="maze"  class="anim" xlink:href="maze.svg#maze" transform="translate(650,300) scale(.24)"></use>
-    				    <use id="robot"  class="anim" xlink:href="robot.svg#robot" transform="translate(50,250) scale(.34)"></use>
+    				    <use id="maze"  class="anim" xlink:href="http://localhost:3000/maze.svg#maze" transform="translate(650,300) scale(.24)"></use>
+    				    <use id="robot"  class="anim" xlink:href="http://localhost:3000/robot.svg#robot" transform="translate(50,250) scale(.34)"></use>
     				    <g>
     				        <defs>
     				            <marker id="arrow" viewBox="0 -5 10 10" refX="5" refY="0" marker-width="4" marker-height="4" orient="auto">
@@ -51,7 +100,7 @@
     				        <line x2="220" y2="530" x1="220" y1="610" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
     				    </g>
     				    <g id="reward" class="anim">
-    				        <use xlink:href="a_reward.svg#reward" transform="translate(465,350) scale(.05)"></use>
+    				        <use xlink:href="http://localhost:3000/a_reward.svg#reward" transform="translate(465,350) scale(.05)"></use>
     				        <text x="419" y="430" font-family="Futura" font-size="35">REWARD</text>
     				        <line x1="670" y1="395" x2="340" y2="395" stroke-dasharray="5, 5" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
     				    </g>
