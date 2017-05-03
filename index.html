@@ -104,6 +104,9 @@
         .green-text {
             color: rgb(155,255,155);
         }
+        .blue-text {
+            color: rgb(155,155,255);
+        }
         .red {
             background-color: rgb(255,155,155);
         }
@@ -162,77 +165,20 @@
                 <img id="hidding" src="robot-small.png"/>
             </section>
             <section>
-                <style>
-                    .arrow{
-                        stroke-width:5;
-                        stroke:#000;
-                        stroke-dasharray:5, 5;
-                    }
-                    .anim {
-                        animation-name: appear;
-                        animation-duration: 3s;
-                        animation-fill-mode: forwards;
-                        opacity: 0;
-                    }
-                    #maze {
-                        fill:#679436;
-                        animation-delay: 3s;
-                    }
-                    #robot {
-                        fill:#4899ae;
-                        animation-delay: 1s;
-                    }
-                    #reward {
-                        fill:#ffad05;
-                        animation-delay: 11s;
-                    }
-                    #reward text{
-                        fill:#0C090D;
-                    }
-
-                    #action {
-                        animation-delay: 5s;
-                    }
-                    #state {
-                        animation-delay: 7s;
-                    }
-                    @keyframes appear {
-                        from { opacity: 0; }
-                        to { opacity: 1; }
-                    }
-                    #figure {
-                        width: 1000px;
-                        height: 800px; 
-                    }
-                </style>
-                <svg id="figure" transform="translate(0,-100)scale(.8)">
-                    <use id="maze"  xlink:href="maze.svg#maze" transform="translate(650,300) scale(.24)"></use>
-                    <use id="robot"  xlink:href="robot.svg#robot" transform="translate(50,250) scale(.34)"></use>
-                    <g>
-                        <defs>
-                            <marker id="arrow" viewBox="0 -5 10 10" refX="5" refY="0" marker-width="4" marker-height="4" orient="auto">
-                                <path d="M0,-5L10,0L0,5" class="arrowHead"></path>
-                            </marker>
-                        </defs>
-                    </g>
-                    <g id="action">
-                        <text x="443" y="160" font-family="Futura" font-size="35">acción</text>
-                        <line x1="220" y1="240" x2="220" y2="180" stroke="#0C090D" stroke-width="5"></line>
-                        <line x1="220" y1="180" x2="770" y2="180" stroke="#0C090D" stroke-width="5" ></line>           
-                        <line x1="770" y1="180" x2="770" y2="290" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
-                    </g>
-                    <g id="state">
-                        <text x="453" y="650" font-family="Futura" fill="#0C090D" font-size="35">estado</text>
-                        <line x1="220" y1="610" x2="770" y2="610" stroke="#0C090D" stroke-width="5" ></line>           
-                        <line x1="770" y1="610" x2="770" y2="500" stroke="#0C090D" stroke-width="5" ></line>
-                        <line x2="220" y2="530" x1="220" y1="610" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
-                    </g>
-                    <g id="reward">
-                        <use xlink:href="a_reward.svg#reward" transform="translate(465,350) scale(.05)"></use>
-                        <text x="399" y="430" font-family="Futura" font-size="35">recompensa</text>
-                        <line x1="670" y1="395" x2="340" y2="395" stroke-dasharray="5, 5" stroke="#0C090D" stroke-width="5" marker-end="url(#arrow)"></line>
-                    </g>
-                </svg>
+                <h2>Un poco de historia</h2>
+                <ul>
+                    <li class="fragment">Chinook</li>
+                    <li class="fragment"><span class="blue-text">TD-Gammon</span></li>
+                    <li class="fragment">Deep Blue</li>
+                    <li class="fragment">Watson</li>
+                    <li class="fragment">AlphaGo</li>
+                <ul>
+            </section>
+            <section>
+                <p>Aprender a Aprender</p>
+            </section>
+            <section>
+                <img src="diagram.png"/>
             </section>
             <section>
                 <pre><code>
